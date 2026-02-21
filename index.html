@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>My To-Do List</h1>
+
+        <!-- Form -->
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Enter your task">
+            <input type="date" id="date-input">
+            <button type="submit">Add</button>
+        </form>
+
+        <p class="error-message" id="error-message"></p>
+
+        <!-- Filter -->
+        <div class="filter">
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="today">Today</option>
+                <option value="upcoming">Upcoming</option>
+            </select>
+        </div>
+
+        <!-- To-Do List -->
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
